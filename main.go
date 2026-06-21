@@ -10,4 +10,6 @@ func main() {
 	fmt.Println("Hello, World!")
 	fmt.Println(puppy.Bark())
 	fmt.Println(puppy.BigBark())
+
+	fmt.Println("This is version 1.0.0.")
 }
