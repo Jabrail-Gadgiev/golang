@@ -2,14 +2,31 @@ package main
 
 import (
 	"fmt"
-
-	"github.com/GoesToEleven/puppy"
+	"math/rand"
 )
 
-func main() {
-	fmt.Println("Hello, World!")
-	fmt.Println(puppy.Bark())
-	fmt.Println(puppy.BigBark())
+/*
+	func init() {
+		fmt.Printf("This is where initialization for my program occurs\n")
+	}
+*/
 
-	fmt.Println("This is version 1.0.0.")
+func main() {
+	x := rand.Intn(10)
+	y := rand.Intn(10)
+
+	fmt.Printf("x is %v and y is %v\n", x, y)
+
+	if x < 4 && y < 4 {
+		fmt.Println("x and y are both less than 4")
+	} else if x > 6 && y > 6 {
+		fmt.Println("x and y are both greater than 6")
+	} else if x >= 4 && x <= 6 {
+		fmt.Println("x is greater than or equal to 4 and less than or equal to 6")
+	} else if y != 5 {
+		fmt.Println("y is not 5")
+	} else {
+		fmt.Println("None of the previous cases were met")
+	}
+
 }
