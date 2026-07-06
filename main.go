@@ -2,31 +2,14 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
 )
 
-/*
-	func init() {
-		fmt.Printf("This is where initialization for my program occurs\n")
-	}
-*/
-
 func main() {
-	x := rand.Intn(10)
-	y := rand.Intn(10)
-
-	fmt.Printf("x is %v and y is %v\n", x, y)
-
-	if x < 4 && y < 4 {
-		fmt.Println("x and y are both less than 4")
-	} else if x > 6 && y > 6 {
-		fmt.Println("x and y are both greater than 6")
-	} else if x >= 4 && x <= 6 {
-		fmt.Println("x is greater than or equal to 4 and less than or equal to 6")
-	} else if y != 5 {
-		fmt.Println("y is not 5")
-	} else {
-		fmt.Println("None of the previous cases were met")
-	}
-
+	// [inclusive:exclusive]
+	xi := []int{42, 43, 44, 45, 46, 47, 48, 49, 50, 51}
+	x1 := xi[:5]
+	x2 := xi[5:]
+	x3 := xi[2:7]
+	x4 := xi[1:6]
+	fmt.Printf("%v\n%v\n%v\n%v\n", x1, x2, x3, x4)
 }
